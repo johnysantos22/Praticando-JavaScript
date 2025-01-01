@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+  
+}
+
+.lampada img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+
+}
+
+.acessa {
+    filter:drop-shadow(0 0 20px yellow);
+}
+
+.luz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ligar, .desligar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
