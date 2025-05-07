@@ -13,6 +13,26 @@ formulario.addEventListener("submit", function (event) {
       return;
     }
   }
+ 
+  let valor = formulario.elements[0].value.trim();
+
+    let li = document.createElement("li");
+    li.textContent = valor + " ";
+
+    let botaoExcluir = document.createElement("button");
+    botaoExcluir.textContent = "Excluir";
+
+    botaoExcluir.addEventListener("click", function () {
+      lista.removeChild(li);
+    });
+
+    li.appendChild(botaoExcluir);
+    lista.appendChild(li);
+
+    formulario.reset();
+
+
+
 
 });
 
