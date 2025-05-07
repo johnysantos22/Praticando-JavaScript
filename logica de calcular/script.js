@@ -6,10 +6,13 @@
 
  
 
- const nome = prompt("Digite o valor aqui");
- alert(`O valor do jantar é: ${nome}`);
- const taxaGarcom = 0.10; 
- const totalAPagar = taxaGarcom * nome;
- alert(`O valor da taxa do garçom é: ${taxaGarcom}`);
- alert(`O valor total a ser pago é: ${totalAPagar}`);
+ const valorJantar = window.prompt("Digite o valor aqui");
+ alert(`O valor do jantar é: ${valorJantar}`);
+
+ const taxaGarcom = valorJantar * 0.1;
+ alert(`O valor do garçom é: ${taxaGarcom}`) 
+
+ const totalAPagar = Number(taxaGarcom) + Number(valorJantar);
+ alert(`O total a pagar é: ${totalAPagar}`);
+
    
